@@ -1,0 +1,109 @@
+@media (min-width: 1190px) {
+  .container {
+    display: grid;
+    grid-template-columns: 2px 250px 250px;
+    grid-gap: 15px;
+    grid-template-rows: 80px 575px;
+    grid-template-areas:
+      "hd hd hd hd hd hd"
+      "main main main main main main "
+      "ft ft ft ft ft ft ";
+  }
+  .box {
+    background: #f6f7f8;
+  }
+
+  .contextbox {
+    background: #f0f2f6;
+    height: 265px;
+    width: 370px;
+    border-radius: 13px;
+  }
+  .header {
+    grid-area: hd;
+    text-align: center;
+  }
+
+  .sidebar {
+    grid-area: sd;
+  }
+
+  .content {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    grid-area: ft;
+  }
+
+  h1 {
+    color: rgb(23, 74, 85);
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(210, 215, 215);
+  }
+
+  button {
+    height: 20px;
+    align-items: center;
+    width: 150px;
+
+    border-radius: 8px;
+    color: azure;
+    background-color: rgb(56, 109, 223);
+    margin-left: 50%;
+  }
+
+  button:hover {
+    height: 20px;
+    align-items: center;
+    width: 150px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: azure;
+    background-color: rgb(184, 197, 225);
+    margin-left: 50%;
+  }
+
+  button:active {
+    background-color: red;
+    cursor: grabbing;
+  }
+
+  .linktoblog a {
+    display: block;
+    text-align: center;
+    color: white;
+  }
+
+  .contextbox h1 {
+    padding-left: 10px;
+  }
+
+  .contextbox p {
+    padding-left: 10px;
+  }
+
+  .contextbox h3 {
+    text-align: center;
+  }
+  .image-container img {
+    height: 160px;
+    width: 370px;
+  }
+
+  figcaption{
+    text-align: center;
+  }
+}
+
+
